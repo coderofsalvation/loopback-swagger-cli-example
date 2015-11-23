@@ -39,6 +39,7 @@ module.exports =
           'id'
           'name'
         ]
+        public:true,
         'properties':
           'id':
             'type': 'integer'
@@ -52,6 +53,7 @@ module.exports =
           'id'
           'name'
         ]
+        public:true,
         relations:
           "owner": 
             type: "belongsTo"
@@ -63,5 +65,3 @@ module.exports =
             'format': 'int64'
           'name': 'type': 'string'
           'tag': 'type': 'string'
-          'owner': 
-            "$ref": "#/definitions/owner"
