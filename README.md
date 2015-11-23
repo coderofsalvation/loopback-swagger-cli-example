@@ -2,5 +2,4 @@ loopback api based on one coffeescript jsonfile (which uses swagger+loopback syn
 
 # Usage
 
-    $ ./cli/compile
-    $ coffee server/server.coffee
+    $ npm start 
