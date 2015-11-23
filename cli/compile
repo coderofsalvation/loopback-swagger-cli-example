@@ -3,6 +3,6 @@
 coffee -e '
   console.log JSON.stringify require("./model").rest,null,2
 ' > swagger.generated.json
-rm server/models/*.json server/model-config.json
-ls server/models/*.js || slc loopback:swagger $(pwd)/swagger.generated.json
+rm server/models/*.json server/model-config.json &>/dev/null
+ls server/models/*.js &>/dev/null || slc loopback:swagger $(pwd)/swagger.generated.json
 node_modules/.bin/loopback-swagger-cli $(pwd)/swagger.generated.json server/models server/model-config.json

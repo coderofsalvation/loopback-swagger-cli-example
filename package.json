@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
-    "build": "/bin/bash -c --login './cli/compile'",
-    "start": "/bin/bash -c 'exec coffee server/server.coffee'",
+    "start": "/bin/bash -c './cli/compile; exec coffee server/server.coffee'",
     "pretest": "jshint ."
   },
   "dependencies": {
